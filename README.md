@@ -202,6 +202,14 @@ Riscos de Negócios
 
 ## 8. Tomada de Decisões
 
+A tecnologia do backend será TypeScript com NestJS, devido à sua modularidade e segurança no desenvolvimento de APIs. O frontend será feito com ReactJS e TypeScript, garantindo um dashboard dinâmico e escalável. O banco de dados ainda será definido entre MongoDB (para maior flexibilidade) ou PostgreSQL (para estruturação rígida de dados). A Evolution-API foi escolhida para automação no WhatsApp, e o deploy será feito na Vercel devido à facilidade de integração com o ambiente de desenvolvimento.
+
+Os dados serão estruturados para consultas rápidas, armazenando informações de estabelecimentos, usuários e histórico de interações. Para busca por proximidade, será usado um cálculo de distância geográfica. A ordenação das promoções seguirá prioridade de descontos e relevância para o usuário.
+
+O sistema será composto pelo bot do WhatsApp, responsável pela interação com os usuários, uma API backend, que processa as requisições, um banco de dados, que armazena as informações, e um dashboard em React, que permitirá a visualização de métricas.
+
+Para a tomada de decisões, foi feita uma análise comparativa de tecnologias, priorizando escalabilidade e custo-benefício. A estratégia de lançamento inclui testes com um público reduzido para avaliar a aceitação antes da expansão. Além disso, foram considerados riscos técnicos, operacionais e de negócios para minimizar impactos futuros.
+
 ## 9. Organização da Arquitetura MVC
 
 ## 10. Avaliação das Decisões
