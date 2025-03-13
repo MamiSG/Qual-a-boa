@@ -7,9 +7,7 @@ O Bot tem como objetivo identificar o público alvo e analisar a viabilidade par
 
 O objetivo é proporcionar uma experiência mais fluida para os clientes, gerar maior visibilidade para os estabelecimentos e aumentar o faturamento dos mesmos.
 
-## 2. Definição do Produto
-
-## 3. Requisitos do Sistema
+## 2. Requisitos do Sistema
 Requisitos Funcionais (RF)
 
     1. Consulta de Estabelecimentos: O bot deve permitir que os usuários consultem bares e eventos próximos com base na localização fornecida;
@@ -61,19 +59,102 @@ Requisitos Não Funcionais (RNF)
         3. O sistema deve evitar a repetição excessiva de mensagens e oferecer menus dinâmicos para melhorar a experiência do usuário.
 
     Manutenibilidade:
-    
+
         1. O código do sistema deve ser desenvolvido seguindo boas práticas de modularização e documentação, garantindo que futuras alterações e correções possam ser feitas com facilidade;
 
         2. O sistema deve ser projetado para permitir atualizações sem impacto na experiência dos usuários;
 
         3. Devem ser implementados logs e monitoramento contínuo, permitindo a rápida identificação e correção de falhas.
 
-## 4. Restrições e Condições
+## 3. Restrições e Condições
 Para a criação do BOT no WhatsApp, é utilizada a ferramenta Evolution-API, uma API gratuita que faz a criação de Bots no Whatsapp. A linguagem utilizada para a criação da API responsável por controlar os cálculos e respostas do BOT será TypeScript, utilizando o framework NestJS.
 Será também utilizado TypeScript com o framework ReactJS para a criação de um Dashboard de visualização de acessos e métricas. Utilizaremos a metodologia ágil Scrum e Kanban, utilizando o trello para esta gestão, junto ao Clockify para as métricas envolvendo tempo de desenvolvimento e reuniões. A princípio, a ferramenta de deploy utilizada será Vercel.
 
 (falta orçamento)
 ## 5. Necessidades dos Stakeholders
+Clientes (Estabelecimentos, Bares e Organizadores de Eventos)
+
+    Divulgação e Visibilidade:
+
+        1. Precisam de um canal acessível e de baixo custo para promover seus estabelecimentos, produtos e promoções;
+
+        2. Desejam alcançar mais clientes, especialmente jovens adultos que frequentam eventos e bares.
+
+    Aumento de Vendas e Planejamento de Consumo:
+
+        1. Buscam atrair mais clientes ao divulgar promoções e preços antecipadamente;
+
+        2. Precisam de um meio eficiente para informar sobre horários de funcionamento, eventos e produtos disponíveis.
+
+    Facilidade de Cadastro e Atualização de Informações:
+
+        1. Devem ter um meio simples para cadastrar e atualizar seus cardápios e promoções, sem necessidade de conhecimento técnico avançado.
+
+    Análise de Dados e Comportamento do Consumidor:
+
+        1. Desejam entender melhor os hábitos dos consumidores para ajustar promoções e estratégias de venda;
+
+        2. Precisam de métricas sobre o interesse dos usuários e os estabelecimentos mais pesquisados.
+
+Usuários Finais (Frequentadores de Bares e Eventos)
+
+    Acesso Rápido a Informações Relevantes:
+
+        1. Querem saber onde ir com base em localização, preços e promoções disponíveis;
+
+        2. Desejam informações rápidas e organizadas sem precisar baixar um aplicativo.
+
+    Planejamento do Consumo:
+
+        1. Precisam consultar os preços antes de sair para otimizar seus gastos;
+
+        2. Buscam saber quais estabelecimentos têm as melhores promoções e custo-benefício.
+
+    Interação Simples e Intuitiva:
+
+        1. Preferem uma experiência fluida sem precisar digitar comandos complicados;
+
+        1. Desejam um bot que responda de forma clara e direta, sem mensagens confusas ou demoradas.
+
+Gerentes de Projeto e Equipe de Gestão
+
+    Monitoramento de Desempenho e Adoção do Bot:
+
+        1. Precisam de dados sobre a aceitação do bot, número de interações e engajamento dos usuários;
+
+        2. Buscam métricas sobre os estabelecimentos mais consultados e os horários de pico de uso.
+
+    Tomada de Decisão Baseada em Dados:
+
+        1. Precisam de relatórios e dashboards para avaliar a viabilidade do projeto antes de expandi-lo para um aplicativo completo;
+
+        2. Querem identificar possíveis melhorias no bot para aumentar sua utilidade.
+
+    Gestão de Recursos e Tempo de Desenvolvimento:
+
+        1. Precisam equilibrar as demandas do projeto com o orçamento e tempo disponível;
+
+        2. Devem garantir que o desenvolvimento siga uma abordagem iterativa e dentro dos prazos estabelecidos.
+
+Desenvolvedores (Equipe Técnica)
+
+    Ferramentas e Infraestrutura Adequadas:
+
+        1. Precisam de APIs confiáveis e bem documentadas para garantir o bom funcionamento do bot;
+
+        2. Devem contar com um ambiente de desenvolvimento estável e escalável.
+
+    Código Limpo e Manutenível:
+
+        1. O sistema deve ser modular e bem estruturado para facilitar futuras atualizações;
+
+        2. A documentação deve ser clara para permitir a colaboração entre os desenvolvedores.
+
+    Facilidade de Deploy e Monitoramento:
+
+        1. Precisam de um fluxo de deploy simples e eficiente (como Vercel) para agilizar as atualizações;
+        
+        2. Desejam ferramentas de logs e monitoramento para identificar possíveis falhas rapidamente.
 
 ## 6. Tendências Tecnológicas
 
