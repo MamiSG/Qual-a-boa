@@ -70,7 +70,7 @@ Requisitos Não Funcionais (RNF)
 Para a criação do BOT no WhatsApp, é utilizada a ferramenta Evolution-API, uma API gratuita que faz a criação de Bots no Whatsapp. A linguagem utilizada para a criação da API responsável por controlar os cálculos e respostas do BOT será TypeScript, utilizando o framework NestJS.
 Será também utilizado TypeScript com o framework ReactJS para a criação de um Dashboard de visualização de acessos e métricas. Utilizaremos a metodologia ágil Scrum e Kanban, utilizando o trello para esta gestão, junto ao Clockify para as métricas envolvendo tempo de desenvolvimento e reuniões. A princípio, a ferramenta de deploy utilizada será Vercel.
 
-(falta orçamento)
+(falta orçamentos e prazos de entrega)
 ## 5. Necessidades dos Stakeholders
 Clientes (Estabelecimentos, Bares e Organizadores de Eventos)
 
@@ -157,18 +157,48 @@ Desenvolvedores (Equipe Técnica)
         2. Desejam ferramentas de logs e monitoramento para identificar possíveis falhas rapidamente.
 
 ## 6. Tendências Tecnológicas
-
 O projeto do BOT "Qual a boa?" utilizará tecnologias modernas para garantir escalabilidade, eficiência e facilidade de manutenção. No backend, será utilizado TypeScript junto com NestJS, um framework modular baseado em arquitetura MVC e conceitos de microsserviços. Essa escolha permite suporte a GraphQL, WebSockets e APIs REST, facilitando integrações futuras. No frontend, será utilizado ReactJS com TypeScript para o desenvolvimento do dashboard de métricas, permitindo uma interface responsiva e interativa, além de integração com bibliotecas de visualização de dados como Recharts, D3.js e Chart.js.
 
 Para infraestrutura e deploy, será utilizada a Vercel, uma plataforma de hospedagem serverless otimizada para aplicações React, Next.js e APIs em Node.js. Esse serviço permite deploy contínuo e escalável, sem necessidade de configurações avançadas. O banco de dados ainda será definido, podendo ser MongoDB (NoSQL) para armazenamento de interações do bot ou PostgreSQL (SQL) para dados estruturados de estabelecimentos e usuários. A automação do bot no WhatsApp será feita com a Evolution-API, uma API gratuita que possibilita a criação de bots sem necessidade de um número comercial. Caso o projeto cresça, existe a possibilidade de migração para o WhatsApp Business API.
 
 A gestão do projeto seguirá metodologias ágeis, combinando Scrum e Kanban (Scrumban). As tarefas serão organizadas em sprints curtas, garantindo entregas contínuas e priorização dinâmica, utilizando Trello para o gerenciamento das atividades. O Clockify será utilizado para rastrear o tempo de desenvolvimento, permitindo uma análise mais precisa do esforço investido em cada etapa do projeto. Além disso, será implementada uma estratégia de DevOps e CI/CD utilizando Vercel e GitHub Actions, garantindo automação nos testes e deploys para maior estabilidade.
 
-O bot será desenvolvido para fornecer respostas diretas e objetivas sobre os estabelecimentos próximos e suas promoções, sem a utilização de inteligência artificial para interpretação de linguagem natural. O foco será na eficiência e rapidez nas respostas, garantindo uma experiência simples e intuitiva para os usuários.
+O bot será desenvolvido para fornecer respostas diretas e objetivas sobre os estabelecimentos próximos e suas promoções. O foco será na eficiência e rapidez nas respostas, garantindo uma experiência simples e intuitiva para os usuários.
 
 A escolha dessas tecnologias visa garantir um desenvolvimento moderno, flexível e escalável, permitindo a implementação rápida da primeira versão do bot e abrindo caminho para futuras melhorias e expansões. Caso novas demandas surjam, a estrutura do projeto já estará preparada para adaptações e crescimento.
 
 ## 7. Riscos do Projeto
+Riscos Técnicos
+
+    1. Disponibilidade da Evolution-API: Sendo uma ferramenta gratuita, pode haver limitações na estabilidade ou mudanças nos termos de uso, impactando o funcionamento do bot;
+
+    2. Escalabilidade da Arquitetura: Caso o volume de usuários cresça rapidamente, pode ser necessário migrar para soluções pagas e mais robustas, como WhatsApp Business API e servidores dedicados;
+
+    3. Falhas no Deploy e CI/CD: Problemas na Vercel ou conflitos de versão no código podem causar interrupções no funcionamento do bot e do dashboard;
+
+    4. Escolha do Banco de Dados: Se a modelagem inicial não for bem definida, pode impactar o desempenho e exigir migração para outra solução, gerando retrabalho;
+
+    5. Compatibilidade com WhatsApp: O WhatsApp frequentemente atualiza suas políticas e APIs, o que pode exigir ajustes no código para manter o bot funcionando corretamente.
+
+Riscos Operacionais
+
+    1. Aderência do Público: Existe o risco de o bot não ser amplamente adotado pelos usuários, reduzindo sua utilidade para os estabelecimentos;
+
+    2. Interação Limitada do Bot: Como o bot não terá inteligência artificial, ele dependerá de comandos bem estruturados. Isso pode gerar frustração nos usuários caso as respostas não sejam suficientemente abrangentes;
+
+    3. Dependência de Dados dos Estabelecimentos: A qualidade das informações divulgadas (preços e promoções) dependerá da atualização por parte dos estabelecimentos, o que pode comprometer a confiabilidade do serviço;
+
+    4. Manutenção Contínua: Mesmo após o lançamento, será necessário monitoramento e ajustes constantes para manter a qualidade e disponibilidade do bot.
+
+Riscos de Negócios
+
+    1. Monetização do Serviço: O modelo de negócios precisa ser validado. Se os estabelecimentos não enxergarem valor na divulgação pelo bot, pode ser difícil gerar receita com o serviço;
+
+    2. Concorrência com Outras Plataformas: Aplicativos já existentes, como Google Maps, iFood e redes sociais, também fornecem informações sobre bares e eventos, o que pode reduzir o diferencial competitivo do bot;
+
+    3. Restrições Legais e Regulamentações: Dependendo da forma de monetização e coleta de dados, pode ser necessário seguir diretrizes de LGPD (Lei Geral de Proteção de Dados) para garantir a privacidade dos usuários;
+
+    4. Sustentabilidade do Projeto: Se não houver tração suficiente ou um modelo de negócios sustentável, pode ser difícil justificar investimentos futuros para expansão do bot.
 
 ## 8. Tomada de Decisões
 
