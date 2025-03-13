@@ -153,11 +153,20 @@ Desenvolvedores (Equipe Técnica)
     Facilidade de Deploy e Monitoramento:
 
         1. Precisam de um fluxo de deploy simples e eficiente (como Vercel) para agilizar as atualizações;
-        
+
         2. Desejam ferramentas de logs e monitoramento para identificar possíveis falhas rapidamente.
 
 ## 6. Tendências Tecnológicas
 
+O projeto do BOT "Qual a boa?" utilizará tecnologias modernas para garantir escalabilidade, eficiência e facilidade de manutenção. No backend, será utilizado TypeScript junto com NestJS, um framework modular baseado em arquitetura MVC e conceitos de microsserviços. Essa escolha permite suporte a GraphQL, WebSockets e APIs REST, facilitando integrações futuras. No frontend, será utilizado ReactJS com TypeScript para o desenvolvimento do dashboard de métricas, permitindo uma interface responsiva e interativa, além de integração com bibliotecas de visualização de dados como Recharts, D3.js e Chart.js.
+
+Para infraestrutura e deploy, será utilizada a Vercel, uma plataforma de hospedagem serverless otimizada para aplicações React, Next.js e APIs em Node.js. Esse serviço permite deploy contínuo e escalável, sem necessidade de configurações avançadas. O banco de dados ainda será definido, podendo ser MongoDB (NoSQL) para armazenamento de interações do bot ou PostgreSQL (SQL) para dados estruturados de estabelecimentos e usuários. A automação do bot no WhatsApp será feita com a Evolution-API, uma API gratuita que possibilita a criação de bots sem necessidade de um número comercial. Caso o projeto cresça, existe a possibilidade de migração para o WhatsApp Business API.
+
+A gestão do projeto seguirá metodologias ágeis, combinando Scrum e Kanban (Scrumban). As tarefas serão organizadas em sprints curtas, garantindo entregas contínuas e priorização dinâmica, utilizando Trello para o gerenciamento das atividades. O Clockify será utilizado para rastrear o tempo de desenvolvimento, permitindo uma análise mais precisa do esforço investido em cada etapa do projeto. Além disso, será implementada uma estratégia de DevOps e CI/CD utilizando Vercel e GitHub Actions, garantindo automação nos testes e deploys para maior estabilidade.
+
+O bot será desenvolvido para fornecer respostas diretas e objetivas sobre os estabelecimentos próximos e suas promoções, sem a utilização de inteligência artificial para interpretação de linguagem natural. O foco será na eficiência e rapidez nas respostas, garantindo uma experiência simples e intuitiva para os usuários.
+
+A escolha dessas tecnologias visa garantir um desenvolvimento moderno, flexível e escalável, permitindo a implementação rápida da primeira versão do bot e abrindo caminho para futuras melhorias e expansões. Caso novas demandas surjam, a estrutura do projeto já estará preparada para adaptações e crescimento.
 
 ## 7. Riscos do Projeto
 
