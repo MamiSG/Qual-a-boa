@@ -1,7 +1,10 @@
 # PROJETO QUAL A BOA
 
 [Matriz CSD](https://www.figma.com/board/ctgh6SqhwXkw8sIjEE2zbN/Qual-a-Boa%3F---Matriz-CSD?node-id=0-1&p=f&t=iVJnnv2ipA4wu11z-0);
+
 [EAP - estrutura analítica do projeto](https://www.figma.com/board/iS60b2bwwZ7aWdmnU9Izsh/EAP---estrutura-analitica-do-projeto?node-id=0-1&p=f&t=PIzKZcbvdxCEzr7s-0);
+
+[Diagrama de caso de uso](https://lucid.app/lucidchart/446db904-c465-4238-b82b-4b5e0fb6305c/edit?invitationId=inv_8b962b52-4d49-4c79-b7c8-6315093d25b8&page=.Q4MUjXso07N#);
 
 ## 1. Definição do Produto
 Bot de WhatsApp para analisar o mercado de uma possível solução de problema envolvendo informação e divulgação de produtos comercializados em bares e eventos.
