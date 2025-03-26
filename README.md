@@ -1,7 +1,10 @@
 # PROJETO QUAL A BOA
 
 [Matriz CSD](https://www.figma.com/board/ctgh6SqhwXkw8sIjEE2zbN/Qual-a-Boa%3F---Matriz-CSD?node-id=0-1&p=f&t=iVJnnv2ipA4wu11z-0);
+
 [EAP - estrutura analítica do projeto](https://www.figma.com/board/iS60b2bwwZ7aWdmnU9Izsh/EAP---estrutura-analitica-do-projeto?node-id=0-1&p=f&t=PIzKZcbvdxCEzr7s-0);
+
+[Diagrama de caso de uso](https://lucid.app/lucidchart/446db904-c465-4238-b82b-4b5e0fb6305c/edit?invitationId=inv_8b962b52-4d49-4c79-b7c8-6315093d25b8&page=.Q4MUjXso07N#);
 
 ## 1. Definição do Produto
 Bot de WhatsApp para analisar o mercado de uma possível solução de problema envolvendo informação e divulgação de produtos comercializados em bares e eventos.
@@ -70,7 +73,7 @@ Requisitos Não Funcionais (RNF)
         3. Devem ser implementados logs e monitoramento contínuo, permitindo a rápida identificação e correção de falhas.
 
 ## 3. Restrições e Condições
-Para a criação do BOT no WhatsApp, é utilizada a ferramenta Evolution-API, uma API gratuita que faz a criação de Bots no Whatsapp. A linguagem utilizada para a criação da API responsável por controlar os cálculos e respostas do BOT será TypeScript, utilizando o framework NestJS.
+Para a criação do BOT no WhatsApp, é utilizada a ferramenta Evolution-API, uma API gratuita que faz a criação de Bots no Whatsapp. A linguagem utilizada para a criação da API responsável por controlar os cálculos e respostas do BOT será em Python, utilizando o framework Flask. Será necessário também a utilização de uma API que vai gerenciar os dados brutos das tabelas do banco de dados, ele também será em Python, utilizando o framework Flask.
 Será também utilizado TypeScript com o framework ReactJS para a criação de um Dashboard de visualização de acessos e métricas. Utilizaremos a metodologia ágil Scrum e Kanban, utilizando o trello para esta gestão, junto ao Clockify para as métricas envolvendo tempo de desenvolvimento e reuniões. A princípio, a ferramenta de deploy utilizada será Vercel.
 
 (falta orçamentos e prazos de entrega)
@@ -160,7 +163,7 @@ Desenvolvedores (Equipe Técnica)
         2. Desejam ferramentas de logs e monitoramento para identificar possíveis falhas rapidamente.
 
 ## 6. Tendências Tecnológicas
-O projeto do BOT "Qual a boa?" utilizará tecnologias modernas para garantir escalabilidade, eficiência e facilidade de manutenção. No backend, será utilizado TypeScript junto com NestJS, um framework modular baseado em arquitetura MVC e conceitos de microsserviços. Essa escolha permite suporte a GraphQL, WebSockets e APIs REST, facilitando integrações futuras. No frontend, será utilizado ReactJS com TypeScript para o desenvolvimento do dashboard de métricas, permitindo uma interface responsiva e interativa, além de integração com bibliotecas de visualização de dados como Recharts, D3.js e Chart.js.
+O projeto do BOT "Qual a boa?" utilizará tecnologias modernas para garantir escalabilidade, eficiência e facilidade de manutenção. No backend, será utilizado Flask, um microframework web em Python, Ele é leve, modular e flexível. No frontend, será utilizado ReactJS com TypeScript para o desenvolvimento do dashboard de métricas, permitindo uma interface responsiva e interativa, além de integração com bibliotecas de visualização de dados como Recharts, D3.js e Chart.js.
 
 Para infraestrutura e deploy, será utilizada a Vercel, uma plataforma de hospedagem serverless otimizada para aplicações React, Next.js e APIs em Node.js. Esse serviço permite deploy contínuo e escalável, sem necessidade de configurações avançadas. O banco de dados ainda será definido, podendo ser MongoDB (NoSQL) para armazenamento de interações do bot ou PostgreSQL (SQL) para dados estruturados de estabelecimentos e usuários. A automação do bot no WhatsApp será feita com a Evolution-API, uma API gratuita que possibilita a criação de bots sem necessidade de um número comercial. Caso o projeto cresça, existe a possibilidade de migração para o WhatsApp Business API.
 
@@ -205,7 +208,7 @@ Riscos de Negócios
 
 ## 8. Tomada de Decisões
 
-A tecnologia do backend será TypeScript com NestJS, devido à sua modularidade e segurança no desenvolvimento de APIs. O frontend será feito com ReactJS e TypeScript, garantindo um dashboard dinâmico e escalável. O banco de dados ainda será definido entre MongoDB (para maior flexibilidade) ou PostgreSQL (para estruturação rígida de dados). A Evolution-API foi escolhida para automação no WhatsApp, e o deploy será feito na Vercel devido à facilidade de integração com o ambiente de desenvolvimento.
+A tecnologia do back-end em Flask, foi baseada em uma análise de requisitos técnicos, pois devido o curto período de tempo e por se tratar de um MVP, ele é mais fácil de integrar com API's externas, tem uma boa performance e sua ótima flexibilidade. O frontend será feito com ReactJS e TypeScript, garantindo um dashboard dinâmico e escalável. O banco de dados ainda será definido entre MongoDB (para maior flexibilidade) ou PostgreSQL (para estruturação rígida de dados). A Evolution-API foi escolhida para automação no WhatsApp, e o deploy será feito na Vercel devido à facilidade de integração com o ambiente de desenvolvimento.
 
 Os dados serão estruturados para consultas rápidas, armazenando informações de estabelecimentos, usuários e histórico de interações. Para busca por proximidade, será usado um cálculo de distância geográfica. A ordenação das promoções seguirá prioridade de descontos e relevância para o usuário.
 
@@ -214,5 +217,30 @@ O sistema será composto pelo bot do WhatsApp, responsável pela interação com
 Para a tomada de decisões, foi feita uma análise comparativa de tecnologias, priorizando escalabilidade e custo-benefício. A estratégia de lançamento inclui testes com um público reduzido para avaliar a aceitação antes da expansão. Além disso, foram considerados riscos técnicos, operacionais e de negócios para minimizar impactos futuros.
 
 ## 9. Organização da Arquitetura MVC
+Mesmo que o bot não tenha uma interface gráfica tradicional, o MVC pode ser adaptado para estruturar a lógica do backend de maneira eficiente.
+
+    - Model (Modelo) – Representação dos Dados
+
+        Responsável pelo gerenciamento dos dados do sistema, lidando com a persistência e estrutura das informações.
+
+    No projeto, isso inclui:
+
+        Modelagem do banco de dados (a API que filtrará as informações do BD).
+
+    - View (Visualização) – Formatação da Resposta
+
+        Como o projeto é um bot de WhatsApp e um dashboard futuro, a View no back-end é responsável pela formatação das respostas enviadas para o usuário via API.
+
+    No caso do bot: A resposta formatada pode ser um JSON estruturado contendo as informações do estabelecimento e das bebidas disponíveis.
+
+    Para o dashboard (futuramente): A API fornecerá dados formatados em JSON para consumo no frontend em ReactJS.
+
+    - Controller (Controlador) – Lógica e Regras de Negócio
+
+        O controlador gerencia as requisições, processa os dados e aplica as regras de negócio (a API do back-end).
+
+    No "Qual a Boa?", ele será responsável por:
+
+        Receber as mensagens do usuário via Evolution-API. Interpretar a requisição e buscar os dados no banco. Aplicar filtros e regras de negócio (exemplo: mostrar promoções primeiro, listar estabelecimentos mais próximos) e Retornar a resposta formatada para o usuário.
 
 ## 10. Avaliação das Decisões
